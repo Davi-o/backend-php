@@ -45,7 +45,8 @@ class CaixaEletronico{
    $conta->saldo -= $valor;
    self::depositar($contaDestino, $valor);
   }else {
-   throw new Exception("A conta não possui saldo suficiente para efetuar a transferencia", 1);
+   echo "A conta não possui saldo suficiente para efetuar a transferencia";
+   die();
   }
  }
 }

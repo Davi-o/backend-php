@@ -27,7 +27,8 @@ class Conta{
    $this->taxa = self::TAXA_OPERACAO_POUPANCA;
    $this->limite = self::SAQUE_LIMITE_POUPANCA;
   } else {
-   throw new Exception("Tipo de conta inválido", 1);
+   echo "Tipo de conta inváildo";
+   die();
   }
  }
 
